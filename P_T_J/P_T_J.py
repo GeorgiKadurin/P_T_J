@@ -1,7 +1,35 @@
 ﻿from math import*
 from random import*
 
+#Задание 6: Проверка имени
+nfs=input("Введите имя => ")
+if nfs.isalpha():
+    ght="Здравствуйте " + nfs.capitalize()
+    print(ght)
+    lok = len(nfs)
+    print("В данном имени", lok ,"столько букв")
+    fx = "aeiouAEIOU"
+    unix = 0
+    ufix = 0
+    for i in nfs:
+        if i in fx:
+            unix += 1
+        else:
+            ufix += 1
+    print("В данном имени столько", unix, "гласных и столько",
+          ufix, "согласных букв.")
 
+else:
+    print("Ошибка")
+
+
+
+#Задание 4: Сортировка
+spisok=[-45,74,29,-1,0]
+spisok.sort()
+print(spisok)
+spisok.sort(reverse=True)
+print(spisok)
 
 
 
