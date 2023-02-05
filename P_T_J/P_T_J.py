@@ -35,6 +35,11 @@ while True:
                 spaev=str(d)+"."+str(m)+"."+str(y) #ei ole ´18..,19,
                 print(f"Sünnipäev on {spaev}")
                 print({f"Viimane number: {ik_list[-1]}"})
+                s=1*int(ik_list[1])+2*int(ik_list[2])+3*int(ik_list[3])+4*int(ik_list[4])+5*int(ik_list[5])+6*int(ik_list[6])+7*int(ik_list[7])+8*int(ik_list[8])+9*int(ik_list[9])+1*int(ik_list[10])
+                print(s)
+                d=s/11
+                print(d)
+                
             
 
 
