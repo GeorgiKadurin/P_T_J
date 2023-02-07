@@ -1,4 +1,4 @@
-def Sugu(ik_list:list)->str:
+﻿def Sugu(ik_list:list)->str:
     """Esimese tahe järgi määrme sugu
     :param list ik_list:Järjend isikukoodi numbridest
     :rtype: str
@@ -81,3 +81,4 @@ def naised_mehed(ikoodid:list):
     ikoodid.extend(naised)
     ikoodid.extend(mehed)
     return ikoodid
+
