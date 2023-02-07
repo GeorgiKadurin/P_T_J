@@ -1,12 +1,17 @@
 from math import*
 from random import*
 
+from OmaMoodul1 import *
 
 
 
 
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 52707ba6393f937a9c1bf7f212912e0e1403909d
 arvud=[]
 isikukoodid=[]
 
@@ -14,11 +19,23 @@ while True:
 
    ik=input("Anna isikukood: ") #str
    if ik == '1': break
+<<<<<<< HEAD
+
+   if ik.isalpha():
+       print("Viga")
+   else:
+   
+    if len(ik)!=11:   #ne rovno 11
+       print("Liiga palju või liiga vähe sümboleid. Sisesta veel kord: ")
+       arvud.append(ik)
+    else:
+=======
    
    if len(ik)!=11:   #ne rovno 11
        print("Liiga palju või liiga vähe sümboleid. Sisesta veel kord: ")
        arvud.append(ik)
    else:
+>>>>>>> 52707ba6393f937a9c1bf7f212912e0e1403909d
         print("Isikukoodi kontroll")
         ik_list=list(ik)
         s1=int(ik_list[0]) #"1"->1
@@ -26,6 +43,19 @@ while True:
             print("Esimine sümbol ei ole õige!")
             arvud.append(ik)
         else:
+<<<<<<< HEAD
+            #
+            print("Esimene sümbol on õige ")
+            spaev=Sunnipaev(ik_list)
+            if spaev=="Viga":
+                arvud.append(ik)
+            
+            else:    
+                #
+                print(f"Sünnipäev on {spaev}")
+                print({f"Viimane number: {ik_list[-1]}"})
+                
+=======
             print("Esimine sümbol on õige")
             y=ik_list[1]+ik_list[2] #aasta
             m=ik_list[3]+ik_list[4] #kuu
@@ -43,6 +73,7 @@ while True:
                 spaev=str(d)+"."+str(m)+"."+str(y) #ei ole ´18..,19,
                 print(f"Sünnipäev on {spaev}")
                 print({f"Viimane number: {ik_list[-1]}"})
+>>>>>>> 52707ba6393f937a9c1bf7f212912e0e1403909d
                 s=3*int(ik_list[0])+4*int(ik_list[1])+5*int(ik_list[2])+6*int(ik_list[3])+7*int(ik_list[4])+8*int(ik_list[5])+9*int(ik_list[6])+1*int(ik_list[7])+2*int(ik_list[8])+3*int(ik_list[9])
                 print(s)
                 d=s//11
@@ -53,6 +84,49 @@ while True:
                 print(h)
 
                 hhh=int(ik_list[8]+ik_list[9]+ik_list[10])
+<<<<<<< HEAD
+               # 
+                haigla=Sunnikoht(hhh)
+                
+                sugu=Sugu(ik_list)
+                print(f"see in {sugu}, sünnipäev {spaev} Ta on sündinud {haigla}")
+                isikukoodid.append(ik)
+
+print()
+isikukoodid=naised_mehed(isikukoodid) #sort alguses naised ja pärast mehed
+print(isikukoodid)
+arvud=list(map(int,arvud))       #получаем интовые заначения через map
+arvud.sort()
+print(arvud)
+
+
+
+               
+
+
+#print("Esimine sümbol on õige")
+#            y=ik_list[1]+ik_list[2] #aasta
+#            m=ik_list[3]+ik_list[4] #kuu
+#            d=ik_list[5]+ik_list[6] #päev
+#            if (int(m)<1 or int(m)>13) and (int(d)<1 or int(d)>31):
+#                print("Sünnipäev ei saa luua")
+#                arvud.append(ik)
+#            else:
+#                if s1==1 or s1==2:
+#                    yy="18"
+#                elif s1==3 or s1==4:
+#                    yy="19"
+#                else:
+#                    yy="20"
+#                spaev=str(d)+"."+str(m)+"."+str(y) #ei ole ´18..,19,
+
+
+  #if int(ik_list[0])%2==0:
+  #                  sugu="naine"
+  #                  print()
+  #              else:
+  #                  sugu="mees"
+=======
                 if 1<=hhh<=10:
                     haigla="kuresaare Higla"
                 elif 11<=hhh<=19:
@@ -92,6 +166,7 @@ arvud.sort()
 print(arvud)
 
                
+>>>>>>> 52707ba6393f937a9c1bf7f212912e0e1403909d
 #--------------------------------------
 #A= [ 3, 4, -1, 5, 0, 10, -12]
 #print([A[3]])
