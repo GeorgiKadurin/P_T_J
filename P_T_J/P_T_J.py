@@ -7,11 +7,6 @@ from OmaMoodul1 import *
 
 
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 52707ba6393f937a9c1bf7f212912e0e1403909d
 arvud=[]
 isikukoodid=[]
 
@@ -29,13 +24,12 @@ while True:
        print("Liiga palju või liiga vähe sümboleid. Sisesta veel kord: ")
        arvud.append(ik)
     else:
-=======
+
    
    if len(ik)!=11:   #ne rovno 11
        print("Liiga palju või liiga vähe sümboleid. Sisesta veel kord: ")
        arvud.append(ik)
    else:
->>>>>>> 52707ba6393f937a9c1bf7f212912e0e1403909d
         print("Isikukoodi kontroll")
         ik_list=list(ik)
         s1=int(ik_list[0]) #"1"->1
@@ -43,7 +37,6 @@ while True:
             print("Esimine sümbol ei ole õige!")
             arvud.append(ik)
         else:
-<<<<<<< HEAD
             #
             print("Esimene sümbol on õige ")
             spaev=Sunnipaev(ik_list)
@@ -55,7 +48,7 @@ while True:
                 print(f"Sünnipäev on {spaev}")
                 print({f"Viimane number: {ik_list[-1]}"})
                 
-=======
+
             print("Esimine sümbol on õige")
             y=ik_list[1]+ik_list[2] #aasta
             m=ik_list[3]+ik_list[4] #kuu
@@ -73,7 +66,6 @@ while True:
                 spaev=str(d)+"."+str(m)+"."+str(y) #ei ole ´18..,19,
                 print(f"Sünnipäev on {spaev}")
                 print({f"Viimane number: {ik_list[-1]}"})
->>>>>>> 52707ba6393f937a9c1bf7f212912e0e1403909d
                 s=3*int(ik_list[0])+4*int(ik_list[1])+5*int(ik_list[2])+6*int(ik_list[3])+7*int(ik_list[4])+8*int(ik_list[5])+9*int(ik_list[6])+1*int(ik_list[7])+2*int(ik_list[8])+3*int(ik_list[9])
                 print(s)
                 d=s//11
@@ -84,7 +76,6 @@ while True:
                 print(h)
 
                 hhh=int(ik_list[8]+ik_list[9]+ik_list[10])
-<<<<<<< HEAD
                # 
                 haigla=Sunnikoht(hhh)
                 
@@ -126,7 +117,6 @@ print(arvud)
   #                  print()
   #              else:
   #                  sugu="mees"
-=======
                 if 1<=hhh<=10:
                     haigla="kuresaare Higla"
                 elif 11<=hhh<=19:
@@ -166,7 +156,6 @@ arvud.sort()
 print(arvud)
 
                
->>>>>>> 52707ba6393f937a9c1bf7f212912e0e1403909d
 #--------------------------------------
 #A= [ 3, 4, -1, 5, 0, 10, -12]
 #print([A[3]])
